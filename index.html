@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigma TV - Movie Streaming Software</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
+
+.login {
+  flex: 1;
+  text-align: right;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.login button {
+  padding: 8px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  padding: 20px;
+}
+
+.movies {
+  margin-top: 20px;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.movie {
+  text-align: center;
+}
+
+.movie img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.movie p {
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Sigma TV</h1>
+      <p>Stream your favorite movies anytime, anywhere!</p>
+      <p>Pricing: $0.00/month (50 Movie Limit/month</p> 
+      <p>Pricing: $1.99/month (100 Movie Limit/month</p>
+      <p>Pricing: $3.99/month (No Movie Limit!</p>
+    </div>
+    <div class="login">
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <section class="movies">
+      <h2>Featured Movies</h2>
+      <div class="movie-list">
+        <div class="movie">
+          <img src="opp.jpg" alt="Oppenheimer">
+          <p>Oppenheimer</p>
+        </div>
+        <div class="movie">
+          <img src="mario.jpg" alt="Mario">
+          <p>Mario</p>
+        </div>
+        <div class="movie">
+          <img src="shrek.jpg" alt="Shrek">
+          <p>Shrek</p>
+        </div>
+        <div class="movie">
+          <img src="wonka.jpg" alt="Wonka">
+          <p>Wonka</p>
+        </div>
+        <!-- Add more movies here -->
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
